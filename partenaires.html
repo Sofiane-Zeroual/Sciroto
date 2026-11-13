@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nos partenaires - Campus Café</title>
 </head>
-<body>  <header>
-        <h1>Mon club de lecture</h1>
+<body>
+    <header>
+        <p>Mon club de lecture</p>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -15,13 +16,100 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h1>Voici nos partenaires</h1>
 
         <section>
-            
+            <h2>Liste de nos partenaires</h2>
+            <table>
+                <caption>Nos partenaires</caption>
+                <tr>
+                    <th>Partenaire</th>
+                    <th>Adresse</th>
+                </tr>
+                <tr>
+                    <td>Librairie du Quartier</td>
+                    <td>14 rue des Écoles, 75005 Paris</td>
+                </tr>
+                <tr>
+                    <td>Café Littéraire</td>
+                    <td>28 boulevard Saint-Michel, 75006 Paris</td>
+                </tr>
+                <tr>
+                    <td>Éditions de l'Aube</td>
+                    <td>5 rue de la Gare, 69002 Lyon</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Devenez partenaire du club de lecture</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </p>
+
+                <p>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+                </p>
+
+                <p>
+                    <label for="mdp">Mot de passe :</label>
+                    <input type="password" id="mdp" name="mdp">
+                </p>
+
+                <p>
+                    <label for="date_debut">Date de début de partenariat :</label>
+                    <input type="date" id="date_debut" name="date_debut">
+                </p>
+
+                <p>
+                    <label for="nb_livres">Nombre de livres mis à disposition par semaine :</label>
+                    <input type="number" id="nb_livres" name="nb_livres">
+                </p>
+
+                <fieldset>
+                    <legend>Avez-vous déjà été partenaire par le passé ?</legend>
+                    <input type="radio" id="partenaire_oui" name="deja_partenaire" value="oui">
+                    <label for="partenaire_oui">Oui</label>
+
+                    <input type="radio" id="partenaire_non" name="deja_partenaire" value="non">
+                    <label for="partenaire_non">Non</label>
+                </fieldset>
+
+                <p>Catégories de livres mis à disposition :</p>
+                <p>
+                    <input type="checkbox" id="cat_roman" name="categories" value="roman">
+                    <label for="cat_roman">Roman</label><br>
+
+                    <input type="checkbox" id="cat_sf" name="categories" value="sf">
+                    <label for="cat_sf">Science-fiction</label><br>
+
+                    <input type="checkbox" id="cat_policier" name="categories" value="policier">
+                    <label for="cat_policier">Policier</label><br>
+
+                    <input type="checkbox" id="cat_enfance" name="categories" value="enfance">
+                    <label for="cat_enfance">Petite enfance</label><br>
+
+                    <input type="checkbox" id="cat_autres" name="categories" value="autres">
+                    <label for="cat_autres">Autres</label>
+                </p>
+
+                <p>
+                    <label for="infos">Autres informations :</label><br>
+                    <textarea id="infos" name="infos" rows="5" cols="40"></textarea>
+                </p>
+
+                <button type="submit">S'inscrire</button>
+            </form>
         </section>
     </main>
 
+    <footer>
+        <p>© 2026 Campus Café - Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
