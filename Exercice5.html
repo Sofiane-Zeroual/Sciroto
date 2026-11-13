@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice 5 - Sémantique</title>
+</head>
+<body>
+    <header>
+        <h1>Mon club de lecture</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="page2.html">Nos livres</a></li>
+            <li><a href="page3.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Bienvenue</h2>
+        <p>Chaque mois, nous lisons un livre et nous en discutons ensemble.</p>
+    </main>
+
+    <footer>
+        <p>© 2026 Club de lecture</p>
+    </footer>
+</body>
+</html>
+
+
+
+<!--
+Pour l'exo 5 j'ai repris le code html de base qui etait fait uniquement avec des div pour le refaire proprement avec les balises semantiques. Au debut j'ai aussi du corriger la balise title qui etait mal fermée dans un commentaire au milieu du body sinon la page n'etait pas valide. Ensuite j'ai remplacé chaque div par la bonne balise pour que le code soit plus clair et que le navigateur comprenne la structure du site, et j'ai mis le fichier sur ma branche github.
+
+questions :
+1. Les balises semantiques sont header, nav, article, main et footer parce qu'elles donnent un vrai sens au contenu pour le navigateur et le referencement (par exemple header pour l'en tete, nav pour le menu de navigation, main pour le contenu principal, article pour un bloc independant et footer pour le bas de page). A l'inverse div, span et b sont non semantiques, elles servent juste a faire de la mise en page ou mettre en gras visuellement sans indiquer de role particulier.
+2. Dans le code de base j'ai changé <div class="haut"> en <header> pour le titre principal, <div class="menu"> en <nav> vu que c'est la liste des liens, <div class="contenu"> en <main> pour le texte principal et <div class="bas"> en <footer> pour le copyright en bas. J'ai gardé aucune div au final parce que chaque partie avait deja sa balise html faite pour.
+-->
