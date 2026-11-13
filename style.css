@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Modifier le style global du body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 2px;
+    background-color: #f8fafc;
+}
+
+/* Modifier le style de header et footer */
+header, footer {
+    background-color: #2B3A67;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+/* Modifier le style des titres */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+h2 {
+    color:rgb(73, 157, 157);
+}
+
+h3{
+    color:rgb(95, 115, 115);
+}
+
+/* Modifier le style des liens de navigation */
+nav a {
+    color: #f8fafc;
+    text-decoration: none;
+}
+
+/* Modifier le style du main */
+main {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+/* Modifier le style de l'image de index.html */
+main img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #4a4a4a;
+}
+
+/* Modifier le style du tableau présent dans partenaires.html*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #333;
+    padding: 0.75rem 1rem;
+}
+
+table th {
+    background-color: #4a6fa5;
+    color: white;
+    text-align: left;
+}
+
+/* Modifier le style du formulaire présent dans partenaires.html */
+form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #3a5a85;
+}
