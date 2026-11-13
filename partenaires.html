@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Café</title>
+</head>
+<body>
+    <header>
+        <h1>Voici nos partenaires</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="https://moodle-ovh.isep.fr/moodle/course/view.php?id=37">Page web</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <caption>Liste de nos partenaires</caption>
+                <tr>
+                    <th>Partenaire</th>
+                    <th>Adresse</th>
+                </tr>
+                <tr>
+                    <td>Partenaire 1</td>
+                    <td>Adresse du partenaire 1</td>
+                </tr>
+                <tr>
+                    <td>Partenaire 2</td>
+                    <td>Adresse du partenaire 2</td>
+                </tr>
+                <tr>
+                    <td>Partenaire 3</td>
+                    <td>Adresse du partenaire 3</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Devenez partenaire du club de lecture</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </p>
+
+                <p>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="nom@exemple.com" required>
+                </p>
+
+                <p>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                </p>
+
+                <p>
+                    <label for="date-debut">Date de début de partenariat :</label>
+                    <input type="date" id="date-debut" name="date-debut">
+                </p>
+
+                <p>
+                    <label for="livres-semaine">Nombre de livres mis à disposition par semaine :</label>
+                    <input type="number" id="livres-semaine" name="livres-semaine" min="0">
+                </p>
+
+                <fieldset>
+                    <legend>Avez-vous déjà été partenaire par le passé ?</legend>
+                    <input type="radio" id="oui" name="deja-partenaire" value="oui">
+                    <label for="oui">Oui</label>
+                    <input type="radio" id="non" name="deja-partenaire" value="non">
+                    <label for="non">Non</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Catégories de livres mis à disposition</legend>
+                    <input type="checkbox" id="roman" name="categories" value="roman">
+                    <label for="roman">Roman</label>
+                    <input type="checkbox" id="science-fiction" name="categories" value="science-fiction">
+                    <label for="science-fiction">Science-fiction</label>
+                    <input type="checkbox" id="policier" name="categories" value="policier">
+                    <label for="policier">Policier</label>
+                    <input type="checkbox" id="petite-enfance" name="categories" value="petite-enfance">
+                    <label for="petite-enfance">Petite enfance</label>
+                    <input type="checkbox" id="autres" name="categories" value="autres">
+                    <label for="autres">Autres</label>
+                </fieldset>
+
+                <p>
+                    <label for="infos">Autres informations :</label><br>
+                    <textarea id="infos" name="infos" rows="5" cols="40" placeholder="Ajoutez ici vos informations complémentaires"></textarea>
+                </p>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
