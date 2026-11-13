@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nos partenaires</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="https://www.fnac.com">Fnac</a></li>
+                <li><a href="partenaires.html">Nos partenaires</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Voici nos partenaires</h1>
+
+        <!-- EXERCICE 3 : TABLEAU -->
+
+        <section>
+            <table>
+                <caption>Nos partenaires</caption>
+
+                <tr>
+                    <th>Partenaire</th>
+                    <th>Adresse</th>
+                </tr>
+
+                <tr>
+                    <td>Librairie du Centre</td>
+                    <td>12 rue Victor Hugo, Paris</td>
+                </tr>
+
+                <tr>
+                    <td>Bibliothèque Soleil</td>
+                    <td>25 avenue de la République, Lyon</td>
+                </tr>
+
+                <tr>
+                    <td>Librairie des Livres</td>
+                    <td>8 rue des Fleurs, Marseille</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- EXERCICE 4 : FORMULAIRE -->
+
+        <section>
+            <h2>Devenez partenaire du club de lecture</h2>
+
+            <form action="#" method="post">
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <br><br>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email"
+                       placeholder="exemple@email.com" required>
+
+                <br><br>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password">
+
+                <br><br>
+
+                <label for="date">Date de début du partenariat :</label>
+                <input type="date" id="date" name="date">
+
+                <br><br>
+
+                <label for="livres">Nombre de livres par semaine :</label>
+                <input type="number" id="livres" name="livres" min="0">
+
+                <br><br>
+
+                <fieldset>
+                    <legend>Avez-vous déjà été partenaire ?</legend>
+
+                    <input type="radio" id="oui"
+                           name="ancien_partenaire" value="oui">
+                    <label for="oui">Oui</label>
+
+                    <input type="radio" id="non"
+                           name="ancien_partenaire" value="non">
+                    <label for="non">Non</label>
+                </fieldset>
+
+                <br>
+
+                <p>Catégories de livres disponibles :</p>
+
+                <input type="checkbox" id="roman" name="categories"
+                       value="roman">
+                <label for="roman">Roman</label>
+
+                <br>
+
+                <input type="checkbox" id="science" name="categories"
+                       value="science-fiction">
+                <label for="science">Science-fiction</label>
+
+                <br>
+
+                <input type="checkbox" id="policier" name="categories"
+                       value="policier">
+                <label for="policier">Policier</label>
+
+                <br>
+
+                <input type="checkbox" id="enfance" name="categories"
+                       value="petite-enfance">
+                <label for="enfance">Petite enfance</label>
+
+                <br>
+
+                <input type="checkbox" id="autres" name="categories"
+                       value="autres">
+                <label for="autres">Autres</label>
+
+                <br><br>
+
+                <label for="infos">Informations complémentaires :</label>
+                <br>
+                <textarea id="infos" name="infos"
+                          rows="5" cols="40"></textarea>
+
+                <br><br>
+
+                <button type="submit">S'inscrire</button>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
