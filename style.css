@@ -1,0 +1,167 @@
+/* EXERCICE 1 */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 0 15px;
+    background-color: #f8fafc;
+}
+
+header, footer {
+    background-color: #2B3A67;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+}
+
+h2 {
+    color: #2B3A67;
+    font-size: 24px;
+}
+
+h3 {
+    color: #475569;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.livre {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* EXERCICE 2 */
+
+main {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+/* Modifier le style de l'image de index.html */
+main img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #4a4a4a;
+}
+
+/* Modifier le style du tableau présent dans partenaires.html*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #333;
+    padding: 0.75rem 1rem;
+}
+
+table th {
+    background-color: #4a6fa5;
+    color: white;
+    text-align: left;
+}
+
+/* Modifier le style du formulaire présent dans partenaires.html */
+form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #3a5a85;
+}
+
+
+
+/* EXERCICE 4 */
+
+/* Badge Nouveau */
+.image-livre {
+    position: relative;
+    display: inline-block;
+}
+
+.badge-nouveau {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightgreen;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Liens de navigation */
+nav a:hover, nav a:focus {
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+/* Champs du formulaire */
+input:focus, textarea:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* Boutons */
+button:hover, input[type="submit"]:hover {
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+}
+
+/* Décoration des titres */
+h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: lightgreen;
+    margin-top: 5px;
+}
