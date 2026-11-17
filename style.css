@@ -116,5 +116,26 @@ nav ul {
     gap: 1rem;
 }
 
-/* Modifier le style de la section "Livres"
- */
+/* Modifier le style pour que les articles soient côte à côte */
+section.livres {
+    display: flex;
+    gap: 1rem;
+}
+
+section.livres .livre {
+    flex: 1;
+}
+
+/* 3. Tableau et formulaire côte à côte sur partenaires.html */
+.contenu-partenaires {
+    display: flex;
+    gap: 2rem;
+}
+
+.contenu-partenaires table {
+    width: 40%;
+}
+
+.contenu-partenaires form {
+    width: 50%;
+}
