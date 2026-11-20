@@ -1,0 +1,25 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    margin-left: 40px;
+}
+
+.contact {
+    margin-left: auto;
+}
+
