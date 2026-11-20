@@ -63,3 +63,22 @@ footer {
   text-align: center;
   background-color: #1f2937;
 }
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  .galerie {
+    grid-template-columns: 1fr;
+  }
+
+  .a-la-une {
+    grid-column: span 1;
+  }
+}

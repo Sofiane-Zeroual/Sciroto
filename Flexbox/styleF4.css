@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  font-family: Arial, sans-serif;
+  background-color: #e5e7eb;
+}
+
+/* Carte */
+
+.carte {
+  width: 90%;
+  max-width: 450px;
+
+  padding: 40px;
+  text-align: center;
+
+  background-color: white;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+
+  animation: apparition 0.4s ease-out forwards;
+}
+
+/* Bouton */
+
+button {
+  padding: 12px 24px;
+
+  color: white;
+  font-size: 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background: linear-gradient(120deg, #2b3a67, #4a97b1);
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+/* Survol de la souris et sélection au clavier */
+
+button:hover,
+button:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Contour pour la navigation au clavier */
+
+button:focus-visible {
+  outline: 3px solid #1a5fb4;
+  outline-offset: 3px;
+}
+
+/* Animation de la carte */
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
