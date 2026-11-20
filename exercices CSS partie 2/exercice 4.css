@@ -4,25 +4,40 @@ body {
     background-color: #f1f5f9;
 }
 
-.carte:hover {
-transform: scale(1.03);
+.carte {
+    background-color: white;
+    padding: 30px;
+    margin: 50px auto;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    animation: apparition 0.4s ease-out;
 }
 
-
-.bouton {
-background: Red;
-transition: background 0.45s ease .25s; /*écriture groupée*/
+button {
+    background: linear-gradient(120deg, #2B3A67, #4A97B1);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #999;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-.bouton:hover {
-background: Yellow;
-}
 
+button:hover,
+button:focus-visible {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px #777;
+}
 
 @keyframes apparition {
- from { opacity: 0; transform: translateY(10px); }
- to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.carte {
- animation: apparition 0.4s ease-out forwards;
-}
-
