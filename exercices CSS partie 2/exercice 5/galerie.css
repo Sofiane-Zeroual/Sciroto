@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial;
+    background-color: #f1f5f9;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2B3A67;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.galerie img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.pagination a {
+    padding: 10px 15px;
+    background-color: #dbeafe;
+    color: #2B3A67;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a[aria-current="page"] {
+    background-color: #2B3A67;
+    color: white;
+}
+
+.pagination a:focus-visible {
+    outline: 3px solid #2B3A67;
+    outline-offset: 3px;
+}
