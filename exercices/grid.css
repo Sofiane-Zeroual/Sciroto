@@ -71,3 +71,23 @@ article {
         grid-column: span 1;
     }
 }
+
+
+@media (max-width: 768px) {
+    .page {
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .galerie {
+        grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    }
+
+    .une {
+        grid-column: span 1;
+    }
+}
