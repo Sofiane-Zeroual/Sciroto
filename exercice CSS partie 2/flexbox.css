@@ -13,8 +13,7 @@ h1 {
 
 nav {
     display: flex;
-    gap: 20px;
-    flex: 1;
+    gap: 30px;
     margin-left: auto;
 }
 
@@ -23,6 +22,3 @@ nav a {
     text-decoration: none;
 }
 
-.contact {
-    margin-left: auto;
-}
