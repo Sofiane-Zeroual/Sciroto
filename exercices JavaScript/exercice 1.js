@@ -6,6 +6,3 @@ let total = prix * quantite;
 console.log(total);
 
 console.log("2" + 3 * 2);
-
-// Bonus
-// prix = 30;
