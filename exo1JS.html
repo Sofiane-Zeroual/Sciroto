@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1 - JavaScript</title>
+</head>
+<body>
+    <h1>Exercice 1 JS</h1>
+    <p>Ouvre la console du navigateur (F12 ou Cmd + Option + J) pour voir les résultats.</p>
+
+    <script>
+        // 1. Déclaration et calcul du total
+        const prix = 20;
+        let quantite = 3;
+        console.log("Total :", prix * quantite); // Affiche : Total : 60
+
+        // 2. Prédiction et vérification de console.log("2" + 3 * 2)
+        // Prédiction : La multiplication (*) est prioritaire sur l'addition (+).
+        // Donc 3 * 2 = 6. Ensuite, "2" est une chaîne de caractères (string),
+        // donc le "+" fait une concaténation : "2" + 6 donne "26".
+        console.log("Résultat :", "2" + 3 * 2); // Affiche : "26"
+
+        // 3. Bonus : Essayer de modifier une constante (const)
+        // Si tu décommentes la ligne ci-dessous, JavaScript va bloquer et afficher une erreur :
+        // Uncaught TypeError: Assignment to constant variable.
+        // (On ne peut pas réassigner une valeur à une variable déclarée avec const).
+        
+        // prix = 25; 
+    </script>
+</body>
+</html> 
+
+git add exo1JS.html
+git commit -m "Ajout exercice 1 JavaScript"
+git push -u origin exo1-js
