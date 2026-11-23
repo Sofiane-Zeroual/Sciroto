@@ -12,6 +12,7 @@
 
     <input type="text" id="tache" placeholder="Entrer une tâche">
     <button id="ajouter">Ajouter une tâche</button>
+    <button id="reset">Réinitialiser la liste</button>
 
     <ul id="liste"></ul>
 
@@ -19,6 +20,7 @@
         const bouton = document.getElementById("ajouter");
         const champ = document.getElementById("tache");
         const liste = document.getElementById("liste");
+        const boutonReset = document.getElementById("reset");
 
         bouton.addEventListener("click", function() {
             const texte = champ.value;
@@ -35,7 +37,7 @@
         boutonReset.addEventListener("click", function() {
             liste.innerHTML = "";
             champ.value = "";
-        });        
+        });
     </script>
 
 </body>
