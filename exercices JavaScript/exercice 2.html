@@ -1,26 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Exercice 2 JavaScript</title>
 </head>
-
 <body>
     <h1>Exercice 2 - Fonctions</h1>
-
     <script>
         function carre(n) {
             return n * n;
         }
-
         function bonjour(nom) {
             return `Bonjour ${nom} !`;
         }
-
         console.log(carre(5));
         console.log(bonjour("Alice"));
+        const carreFleche = (n) => n * n;
+        const bonjourFleche = (nom) => `Bonjour ${nom} !`;
+        console.log(carreFleche(5));
+        console.log(bonjourFleche("Alice"));
     </script>
 </body>
 
