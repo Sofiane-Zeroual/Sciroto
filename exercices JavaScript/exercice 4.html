@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4 JavaScript</title>
+</head>
+
+<body>
+    <h1>Ma liste de tâches</h1>
+
+    <input type="text" id="tache" placeholder="Entrer une tâche">
+    <button id="ajouter">Ajouter une tâche</button>
+
+    <ul id="liste"></ul>
+
+    <script>
+        const bouton = document.getElementById("ajouter");
+        const champ = document.getElementById("tache");
+        const liste = document.getElementById("liste");
+
+        bouton.addEventListener("click", function() {
+            const texte = champ.value;
+
+            if (texte.trim() !== "") {
+                const nouvelleTache = document.createElement("li");
+                nouvelleTache.textContent = texte;
+
+                liste.appendChild(nouvelleTache);
+
+                champ.value = "";
+            }
+        });
+    </script>
+
+</body>
+</html>
