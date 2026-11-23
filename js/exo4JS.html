@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exo 4</title>
+</head>
+<body>
+  <input type="text" id="tache" placeholder="Nouvelle tâche">
+  <button id="btn">Ajouter une tâche</button>
+
+  <ul id="liste"></ul>
+
+  <script>
+    const input = document.querySelector("#tache");
+    const btn = document.querySelector("#btn");
+    const liste = document.querySelector("#liste");
+
+    btn.addEventListener("click", () => {
+      const li = document.createElement("li");
+      li.textContent = input.value;
+      liste.appendChild(li);
+      input.value = "";
+    });
+  </script>
+</body>
+</html>
