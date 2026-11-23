@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exo 5</title>
+</head>
+<body>
+  <form id="monForm">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" required>
+
+    <label for="email">E-mail :</label>
+    <input type="email" id="email" required>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <p id="erreur" style="color: red;"></p>
+
+  <script>
+    const form = document.querySelector("#monForm");
+    const nom = document.querySelector("#nom");
+    const erreur = document.querySelector("#erreur");
+
+    form.addEventListener("submit", (e) => {
+      if (nom.value.length < 3) {
+        e.preventDefault();
+        erreur.textContent = "Le nom doit contenir au moins 3 caractères.";
+      } else {
+        erreur.textContent = "";
+      }
+    });
+  </script>
+</body>
+</html>
