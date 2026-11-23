@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - Fonctions JS</title>
+</head>
+<body>
+    <h1>Exercice 2 : Fonctions JavaScript</h1>
+    <p>Ouvre la console (F12 ou Cmd + Option + J) pour voir les résultats.</p>
+
+    <script>
+        // 1. Fonction carre(n) classique
+        function carre(n) {
+            return n * n;
+        }
+
+        // 2. Fonction bonjour(nom) avec gabarit (template string : ``)
+        function bonjour(nom) {
+            return `Bonjour ${nom}, bienvenue sur le site !`;
+        }
+
+        // 3. Tests avec console.log
+        console.log("Carré de 5 :", carre(5)); // Affiche : 25
+        console.log(bonjour("Aomar"));         // Affiche : Bonjour Aomar, bienvenue sur le site !
+
+        // 4. Bonus : Réécriture en fonctions fléchées (arrow functions)
+        const carreFlechee = (n) => n * n;
+        const bonjourFlechee = (nom) => `Bonjour ${nom}, bienvenue sur le site !`;
+
+        // Tests des fonctions fléchées
+        console.log("Carré fléché de 8 :", carreFlechee(8)); // Affiche : 64
+        console.log(bonjourFlechee("Aomar"));                // Affiche : Bonjour Aomar, bienvenue sur le site !
+    </script>
+</body>
+</html>
