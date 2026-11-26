@@ -1,2 +1,2 @@
-# Sciroto
-Site sur les voitures.
+# Projet développement web : Sciroto
+Site web pour comparer différentes voitures.
