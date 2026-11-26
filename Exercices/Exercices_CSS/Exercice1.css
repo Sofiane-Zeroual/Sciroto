@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/* Modifier le style global du body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 2px;
+    background-color: #f8fafc;
+}
+
+/* Modifier le style de header et footer */
+header, footer {
+    background-color: #2B3A67;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+/* Modifier le style des titres */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+h2 {
+    color:rgb(73, 157, 157);
+}
+
+h3{
+    color:rgb(95, 115, 115);
+}
+
+/* Modifier le style des liens de navigation */
+nav a {
+    color: #f8fafc;
+    text-decoration: none;
+}
+

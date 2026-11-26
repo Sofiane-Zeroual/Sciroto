@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  padding: 20px;
+  color: white;
+  background-color: #1f2937;
+}
+
+aside {
+  grid-area: aside;
+  padding: 20px;
+  background-color: #dbeafe;
+}
+
+aside a {
+  display: block;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+article {
+  padding: 20px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+}
+
+.a-la-une {
+  grid-column: span 2;
+  background-color: #93c5fd;
+}
+
+footer {
+  grid-area: footer;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  background-color: #1f2937;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+
+    box-shadow: 0 5px 12px #000;
+
+    transition: all 0.2s ease;
+}
+
+/* HOVER + FOCUS */
+
+.btn:hover,
+.btn:focus-visible {
+    transform: translateY(-3px);
+
+    background: linear-gradient(135deg, #60a5fa, #2563eb);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  main h2{
+    justify-content: center;
+    text-align: center;
+  }
+
+  header {
+  justify-content: center;
+  text-align: center;
+  grid-area: header;
+  /* padding: 20px; */
+  color: white;
+  background-color: #1f2937;
+  }
+
+  aside {
+  grid-area: aside;
+  padding: 20px;
+  background-color: #dbeafe;
+  }
+
+  aside h2 {
+  text-align: center;
+  }
+
+  aside a {
+  justify-content: center;
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+  color: #1f2937;
+  }
+
+  .a-la-une {
+    grid-column: span 1;
+  }
+
+  footer {
+  grid-area: footer;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-align: center;
+  background-color: #1f2937;
+  }
+}
