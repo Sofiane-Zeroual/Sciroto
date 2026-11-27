@@ -24,7 +24,6 @@ body{
     box-sizing: border-box;
     font-family: var(--texte-font);
     color: var(--couleur-police);
-    
 }
 
 header{
@@ -199,8 +198,8 @@ section h1 {
     position: fixed;
     width: 420px;
     height: 440px;
-    background: rgba(0, 0, 0, .3);
-    border: 2px solid rgba(255, 255, 255, .3);
+    background: #fff;
+    border: 2px solid var(--couleur-bordure);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .3);
     backdrop-filter: blur(20px);

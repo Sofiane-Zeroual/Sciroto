@@ -1,4 +1,6 @@
 const authModal = document.querySelector('.auth-modal');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
 const loginBtnModal = document.querySelector('.login-btn-modal');
 const closeBtnModal = document.querySelector('.close-btn-modal');
 const profileBox = document.querySelector('.profile-box')
@@ -52,6 +54,15 @@ if (avatarCircle && profileBox) {
         profileBox.classList.toggle('show')
     });
 }
+
+
+if (registerLink && authModal) {
+    registerLink.addEventListener('click', () => {
+        authModal.classList.add('slide')
+    });
+} 
+    
+if (loginLink && authModal) loginLink.addEventListener('click', () => authModal.classList.remove('slide'));
 
 
 if (alertBox){
