@@ -28,7 +28,7 @@
             echo "<br><br>";
 
 
-            $connexion = new mysqli("localhost", "root", "", "atelier PHP");
+            $connexion = new mysqli("localhost", "root", "", "atelier_php");
 
             if ($connexion->connect_error) {
                 die("Erreur de connexion.");
