@@ -6,7 +6,8 @@
     <h1>welcome to my php page</h1>
     <?PHP
     $nom = $_POST["nom"] ?? "";
-echo "Bonjour " . htmlspecialchars($nom);
+    $email = $_POST["email"] ?? "";
+echo "Bonjour " . htmlspecialchars($nom) . " (" . htmlspecialchars($email) . ")";
 ?>
 
 </body>
